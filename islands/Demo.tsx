@@ -5,8 +5,8 @@ import {
   Box,
   Container,
   Typography,
-} from "https://esm.sh/@mui/material?alias=react:preact/compat,react/jsx-runtime:preact/compat/jsx-runtime&deps=preact@10.11.0";
-import ExpandMoreIcon from "https://esm.sh/@mui/icons-material/ExpandMore?alias=react:preact/compat,react/jsx-runtime:preact/compat/jsx-runtime&deps=preact@10.11.0";
+} from "@mui/material";
+import { ExpandMore } from "@mui/icons-material";
 
 export default function Demo() {
   return (
@@ -14,7 +14,7 @@ export default function Demo() {
       <Box sx={{ my: 4 }}>
         <Accordion>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMore />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -30,7 +30,7 @@ export default function Demo() {
         </Accordion>
         <Accordion>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMore />}
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -46,7 +46,7 @@ export default function Demo() {
         </Accordion>
         <Accordion disabled>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMore />}
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
