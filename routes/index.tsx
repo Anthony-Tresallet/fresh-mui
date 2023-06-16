@@ -1,6 +1,9 @@
+import MyButton from "../components/my-button.tsx";
 import Demo from "../islands/Demo.tsx";
+import SimpleDemo from "../islands/SimpleDemo.tsx";
 
 export default function Home() {
+  
   return (
     <div>
       <img
@@ -9,7 +12,7 @@ export default function Home() {
         height="128"
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
-      <Demo />
+      <MyButton></MyButton>
     </div>
   );
 }

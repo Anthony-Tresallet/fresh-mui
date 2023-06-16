@@ -5,6 +5,8 @@
 /// <reference lib="deno.ns" />
 
 import { start } from "$fresh/server.ts";
+import { applyManifestLayouts } from "$fresh_layout/mod.ts";
 import manifest from "./fresh.gen.ts";
 
-await start(manifest);
+
+await start(applyManifestLayouts(manifest));
